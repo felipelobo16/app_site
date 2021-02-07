@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>View</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+</head>
+<body>
+
+    <div class="col-8 m-auto pt-2 pb-2 text-center">
+        <h1>** P R O D U T O **</h1>
+    </div>
+
+    <div class="col-8 m-auto pt-2 pb-2 text-center">
+        <a href="/" class="btn btn-info">Voltar</a>
+    </div>
+
+
+    <div class="col-8 m-auto pt-4 pb-2 text-center">
+                    <strong>ID:        </strong>{{db.id}}<br>
+                    <strong>PRODUTO:   </strong>{{db.produto}}<br>
+                    <strong>QUANTIDADE:</strong>{{db.quantidade}}<br>
+                    <strong>VALOR:     </strong>{{db.valor}}<br>
+                    <strong>DESCRIÇÃO:</strong><br>{{db.descricao}}<br>
+    </div>
+</body>
+</html>

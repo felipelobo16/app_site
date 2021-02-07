@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>TITULO</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+</head>
+<body>
+
+    <div class="col-8 m-auto pt-2 pb-2 text-center">
+        <h1> ** C A D A S T R O ** </h1>
+    </div>
+
+    <div class="col-8 m-auto pt-2 pb-2 text-center">
+        <a href="/" class="btn btn-info">Voltar</a>
+    </div>
+
+
+    <div class="col-8 m-auto pt-4 pb-2 text-center">
+
+        <form name="form" id="form" action="{%if db%}/update/{{db.id}}/{%else%}/criar/{%endif%}" method="post">
+            {% csrf_token %}
+            <div class="form-group mt-4">Produto:{{form.produto}}</div>
+            <div class="form-group mt-4">Quantidade:{{form.quantidade}}</div>
+            <div class="form-group mt-4">Valor:{{form.valor}}</div>
+            <div class="form-group mt-4">Descrição:{{form.descricao}}</div>
+            <input type="submit" class="btn btn-success" value="Salvar">
+        </form>
+    </div>
+
+
+</body>
+</html>
